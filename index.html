@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Jibreal Id-deen | Networking, Systems & Network Security</title>
-  <meta name="description" content="Student portfolio for networking, system administration, and network security. Academic labs, projects, etc." />
+  <title>Jibreal Id-deen | Student Portfolio</title>
+  <meta name="description" content="Student portfolio for networking, systems administration, and security labs. Academic projects and featured media from RIT/NTID." />
 
   <style>
     :root{
@@ -76,7 +76,6 @@
       box-shadow: 0 0 18px rgba(110,168,255,.6);
     }
 
-    =
     .links{
       display:flex;
       gap:12px;
@@ -174,7 +173,6 @@
 
     .btn:hover,
     .btn:focus-visible{
-      text-decoration:none;
       filter: brightness(1.05);
       transform: translateY(-1px);
       outline: none;
@@ -188,8 +186,6 @@
       border-radius: var(--radius);
       box-shadow: var(--shadow);
       backdrop-filter: blur(10px);
-
-      /* so sticky nav does not cover section titles */
       scroll-margin-top: 92px;
     }
 
@@ -219,22 +215,6 @@
       color: var(--muted);
       line-height: 1.6;
       font-size: 14px;
-    }
-
-    .chips{
-      display:flex;
-      flex-wrap:wrap;
-      gap:10px;
-      margin-top: 10px;
-    }
-
-    .chip{
-      font-size: 13px;
-      padding: 8px 10px;
-      border-radius: 999px;
-      border: 1px solid var(--border);
-      background: rgba(7,11,20,.25);
-      color: var(--muted);
     }
 
     .meta{
@@ -297,27 +277,63 @@
       </div>
 
       <div class="links">
+        <a class="navbtn" href="#objective">Objective</a>
+        <a class="navbtn" href="#contact">Contact</a>
+        <a class="navbtn" href="#resume">Resume</a>
         <a class="navbtn" href="#skills">Skills</a>
         <a class="navbtn" href="#academic">Academic Projects</a>
         <a class="navbtn" href="#security">Security Labs</a>
         <a class="navbtn" href="#featured">Featured Media</a>
-        <a class="navbtn" href="#resume">Resume</a>
-        <a class="navbtn" href="#contact">Contact</a>
+        <a class="navbtn" href="#background">Background</a>
       </div>
     </div>
 
     <header class="hero">
-      <span class="tag">RIT/NTID • Applied Computer Technology</span>
-      <h1>Jibreal Id-deen<br/>Networking, Systems & Network Security</h1>
+      <span class="tag">:contentReference[oaicite:0]{index=0} • :contentReference[oaicite:1]{index=1}</span>
+      <h1>Jibreal Id-deen</h1>
 
       <p class="sub">
-        I am a Deaf, third-year student at RIT/NTID in Applied Computer Technology (Information & Computing Studies).
-        My focus is networking, system administration, and network security basics. I build labs to practice skills like
-        DNS, DHCP, VLANs, Windows Server, Linux, virtualization, and troubleshooting. I also like writing clear lab reports
-        with steps, screenshots, and testing.
+        I am a Deaf, third-year student in Applied Computer Technology (Information & Computing Studies).
+        I build academic labs to practice networking and systems skills. I like clear documentation with steps, screenshots, and testing.
       </p>
 
+      <div class="cta">
+        <a class="btn primary" href="#academic">View Projects</a>
+        <a class="btn" href="#resume">Resume</a>
+        <a class="btn" href="#contact">Contact</a>
+      </div>
     </header>
+
+    <section id="objective">
+      <h2>Objective</h2>
+      <p class="sub">
+        I am seeking an internship or entry-level role in networking or IT support, where I can apply my hands-on lab experience
+        in system administration, troubleshooting, and network security basics. I want to grow my skills in real environments
+        and continue building strong documentation and problem-solving habits.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p class="sub">
+        Email:
+        <a href="mailto:jibrealiddeen6@gmail.com">jibrealiddeen6@gmail.com</a>
+        <br/>
+        LinkedIn:
+        <a href="https://www.linkedin.com/in/jibreal-id-deen/" target="_blank" rel="noopener">linkedin.com/in/jibreal-id-deen</a>
+      </p>
+      <p class="note">
+        If you prefer, you can replace my email with a first.last@outlook.com address later.
+      </p>
+    </section>
+
+    <section id="resume">
+      <h2>Resume</h2>
+      <p class="sub">Download my resume here:</p>
+      <div class="cta" style="margin-top:12px;">
+        <a class="btn primary" href="assets/Jibreal-Iddeen-Resume.pdf" target="_blank" rel="noopener">Download Resume (PDF)</a>
+      </div>
+    </section>
 
     <section id="skills">
       <h2>Skills</h2>
@@ -325,40 +341,40 @@
         <div class="card">
           <h3>Networking</h3>
           <p>TCP/IP, subnetting, VLANs, DNS, DHCP, NAT, basic routing, and troubleshooting.</p>
-          <div class="chips">
-            <span class="chip">Wireshark</span>
-            <span class="chip">IP planning</span>
-            <span class="chip">Network diagrams</span>
+          <div class="meta">
+            <span class="pill">Wireshark</span>
+            <span class="pill">IP planning</span>
+            <span class="pill">Diagrams</span>
           </div>
         </div>
 
         <div class="card">
-          <h3>Systems & Virtualization</h3>
-          <p>Windows Server basics, Linux basics, VMs, and lab environments (Proxmox / VMware).</p>
-          <div class="chips">
-            <span class="chip">Windows Server</span>
-            <span class="chip">Linux</span>
-            <span class="chip">Proxmox</span>
+          <h3>Systems</h3>
+          <p>Windows Server basics, Linux basics, and virtualization labs.</p>
+          <div class="meta">
+            <span class="pill">Windows Server</span>
+            <span class="pill">Linux</span>
+            <span class="pill">Proxmox</span>
           </div>
         </div>
 
         <div class="card">
-          <h3>Network Security Basics</h3>
-          <p>Hardening, access control, patching, firewall basics, and safe lab practice.</p>
-          <div class="chips">
-            <span class="chip">Least privilege</span>
-            <span class="chip">Firewall rules</span>
-            <span class="chip">Logging</span>
+          <h3>Security Basics</h3>
+          <p>Hardening basics, firewall concepts, access control, patching, and safe lab practice.</p>
+          <div class="meta">
+            <span class="pill">Least privilege</span>
+            <span class="pill">Firewall rules</span>
+            <span class="pill">Logging</span>
           </div>
         </div>
 
         <div class="card">
           <h3>Documentation</h3>
-          <p>I write lab reports with clear steps, screenshots, and verification tests.</p>
-          <div class="chips">
-            <span class="chip">Lab write-ups</span>
-            <span class="chip">Testing</span>
-            <span class="chip">Clear notes</span>
+          <p>Clear write-ups with steps, screenshots, results, and verification checks.</p>
+          <div class="meta">
+            <span class="pill">Reports</span>
+            <span class="pill">Testing</span>
+            <span class="pill">Troubleshooting notes</span>
           </div>
         </div>
       </div>
@@ -374,9 +390,7 @@
 
         <div class="project">
           <h3>SOHO Network Lab</h3>
-          <p>
-            Built a small SOHO lab network. Configured core services and verified connectivity with testing and documentation.
-          </p>
+          <p>Built a small SOHO lab network. Configured core services and verified connectivity with testing and documentation.</p>
           <div class="meta">
             <span class="pill">DNS/DHCP</span>
             <span class="pill">Windows Server</span>
@@ -387,9 +401,7 @@
 
         <div class="project">
           <h3>Proxmox Server Lab</h3>
-          <p>
-            Built a Proxmox lab and deployed multiple VMs. Practiced virtualization, basic services, and validation tests.
-          </p>
+          <p>Built a Proxmox lab and deployed multiple VMs. Practiced virtualization and validation checks.</p>
           <div class="meta">
             <span class="pill">Proxmox</span>
             <span class="pill">VMs</span>
@@ -400,22 +412,18 @@
 
         <div class="project">
           <h3>Pi-hole Network Deployment</h3>
-          <p>
-            Deployed Pi-hole in a lab network to learn DNS filtering and basic network hygiene.
-          </p>
+          <p>Deployed Pi-hole in a lab network to learn DNS filtering and improve network hygiene.</p>
           <div class="meta">
             <span class="pill">Pi-hole</span>
             <span class="pill">DNS</span>
-            <span class="pill">Network hygiene</span>
+            <span class="pill">Filtering</span>
           </div>
           <a href="labs/IddeenJ_lab-5_Pi-Hole_Network_deployment.pdf" target="_blank" rel="noopener">Open report (PDF) →</a>
         </div>
 
         <div class="project">
           <h3>Private AI on LAN (Ollama + OpenWebUI)</h3>
-          <p>
-            Deployed a private AI service on a LAN server and practiced basic hardening and access controls.
-          </p>
+          <p>Deployed a private AI service on a LAN server and practiced basic hardening and access controls.</p>
           <div class="meta">
             <span class="pill">Ubuntu</span>
             <span class="pill">Ollama</span>
@@ -425,6 +433,10 @@
         </div>
 
       </div>
+
+      <p class="note">
+        Tip: Add 1–2 more projects later with short outlines like “Goal, Tools, What I tested, Result.”
+      </p>
     </section>
 
     <section id="security">
@@ -433,42 +445,33 @@
 
         <div class="project">
           <h3>pfSense Firewall Lab (NetGate)</h3>
-          <p>
-            Learned pfSense basics and installed a DNS and IP blocking tool to help control traffic.
-            Practiced firmware updates, package management, and blocking unwanted domains in a lab environment.
-          </p>
+          <p>Learned pfSense basics and practiced firewall concepts in a controlled lab.</p>
           <div class="meta">
             <span class="pill">pfSense</span>
             <span class="pill">Firewall</span>
-            <span class="pill">Content blocking</span>
+            <span class="pill">Lab</span>
           </div>
           <a href="labs/lab2-pfsense.pdf" target="_blank" rel="noopener">Open report (PDF) →</a>
         </div>
 
         <div class="project">
           <h3>Wireless Privacy Lab (WEP)</h3>
-          <p>
-            Demonstrated why WEP is insecure in a controlled class lab. The goal was learning: identify weak encryption
-            and explain safer alternatives like WPA2/WPA3.
-          </p>
+          <p>Showed why WEP is insecure in a class lab and explained safer options like WPA2/WPA3.</p>
           <div class="meta">
-            <span class="pill">Wireless security</span>
-            <span class="pill">Encryption basics</span>
-            <span class="pill">Safe lab only</span>
+            <span class="pill">Wireless</span>
+            <span class="pill">Encryption</span>
+            <span class="pill">Safe lab</span>
           </div>
           <a href="labs/lab5-wep.pdf" target="_blank" rel="noopener">Open report (PDF) →</a>
         </div>
 
         <div class="project">
-          <h3>Denial-of-Service Lab (DDoS Concepts)</h3>
-          <p>
-            Tested web server reliability under heavy request load in a controlled lab. Compared results and learned
-            basic defenses like timeouts, monitoring, and rate limiting.
-          </p>
+          <h3>DoS Concepts Lab</h3>
+          <p>Learned availability concepts and basic mitigation ideas like monitoring and rate limiting.</p>
           <div class="meta">
             <span class="pill">Availability</span>
-            <span class="pill">DoS concepts</span>
-            <span class="pill">Mitigation basics</span>
+            <span class="pill">Monitoring</span>
+            <span class="pill">Mitigation</span>
           </div>
           <a href="labs/lab6-dos.pdf" target="_blank" rel="noopener">Open report (PDF) →</a>
         </div>
@@ -476,7 +479,7 @@
       </div>
 
       <p class="note">
-        These security labs were done for class and permission-based learning. I do not provide passwords, keys, or instructions to attack real systems.
+        These labs are for permission-based learning. I do not share passwords, keys, or harmful instructions.
       </p>
     </section>
 
@@ -486,14 +489,11 @@
 
         <div class="project">
           <h3>Scratch Team Blog: ASL Tutorial (Deaf Kids Code)</h3>
-          <p>
-            Featured in a Scratch Team Blog article about an American Sign Language tutorial in Scratch.
-            This supports Deaf and hard of hearing learners with accessible creative coding.
-          </p>
+          <p>Featured in an article about an ASL tutorial for Scratch to support Deaf and hard of hearing learners.</p>
           <div class="meta">
             <span class="pill">ASL</span>
             <span class="pill">Scratch</span>
-            <span class="pill">Deaf Kids Code</span>
+            <span class="pill">Accessibility</span>
           </div>
           <a href="https://medium.com/scratchteam-blog/new-asl-tutorial-expands-creative-pathways-for-hearing-impaired-scratchers-ba6258dff1d9" target="_blank" rel="noopener">
             Read the article →
@@ -502,14 +502,11 @@
 
         <div class="project">
           <h3>Made by Google: Live Transcribe on Pixel</h3>
-          <p>
-            Featured in a video about Live Transcribe on Pixel. Live Transcribe turns speech into instant captions
-            to support Deaf people in daily conversations and learning.
-          </p>
+          <p>Featured in a video about Live Transcribe and how captions support everyday communication.</p>
           <div class="meta">
             <span class="pill">Accessibility</span>
             <span class="pill">Live Transcribe</span>
-            <span class="pill">Pixel</span>
+            <span class="pill">Video</span>
           </div>
           <a href="https://www.youtube.com/watch?v=DEaw9IZjuqo" target="_blank" rel="noopener">
             Watch the video →
@@ -519,47 +516,16 @@
       </div>
     </section>
 
-    <section id="resume">
-      <h2>Resume</h2>
+    <section id="background">
+      <h2>Background</h2>
       <p class="sub">
-        You can download my resume here:
-      </p>
-
-     
-      <div class="cta" style="margin-top:12px;">
-        <a class="btn primary" href="labs/Jibreal-Iddeen-Resume.pdf" target="_blank" rel="noopener">
-  Download Resume (PDF)
-</a>
-        
-        <---
-      </div>
-
-      <p class="note">
-        Quick highlights:
-      </p>
-
-      <ul class="clean">
-        <li>Applied Computer Technology (AAS) at RIT, expected May 2026 (Term GPA 3.73).</li>
-        <li>Networking: LAN/WAN, VLANs, routing (BGP, RIP/RIPv2), DHCP/DNS, TCP/IP.</li>
-        <li>Systems: Windows Server 2019/2022, Active Directory, Group Policy, Linux.</li>
-        <li>Virtualization: Proxmox, VMware, Hyper-V.</li>
-        <li>Experience: IT Intern at Pennsylvania School for the Deaf (hardware/software + TCP/IP troubleshooting).</li>
-      </ul>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p class="sub">
-        Email:
-        <a href="mailto:jibrealiddeen6@gmail.com">jibrealiddeen6@gmail.com</a>
-        <br/>
-        LinkedIn:
-        <a href="https://www.linkedin.com/in/jibreal-id-deen/" target="_blank" rel="noopener">linkedin.com/in/jibreal-id-deen</a>
+        I enjoy hands-on labs and building real systems. I like learning by testing, documenting results, and improving the setup.
+        I also care about accessibility in tech and clear communication.
       </p>
     </section>
 
     <footer>
-      © <span id="year">2026</span> Jibreal Id-deen • Built with GitHub Pages
+      © 2026 Jibreal Id-deen • Built with :contentReference[oaicite:2]{index=2} Pages
     </footer>
   </div>
 </body>
